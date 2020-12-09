@@ -14,5 +14,11 @@ public class Stars {
     private String name;
     private String about;
 
+    public Stars(){}
 
+    public Stars(long id, String name, String about) {
+        this.id = id;
+        this.name = name;
+        this.about = about;
+    }
 }

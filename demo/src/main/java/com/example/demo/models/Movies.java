@@ -23,4 +23,13 @@ public class Movies {
     @ManyToMany(targetEntity = Genres.class)
     Set<Genres> genres;
 
+    public Movies(){}
+
+    public Movies(Long id, String title, int year, Set<Stars> stars, Set<Genres> genres) {
+        this.id = id;
+        this.title = title;
+        this.year = year;
+        this.stars = stars;
+        this.genres = genres;
+    }
 }

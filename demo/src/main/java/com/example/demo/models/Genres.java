@@ -11,4 +11,11 @@ public class Genres {
     @Id
     private Long id;
     private String name;
+
+    public Genres(){}
+
+    public Genres(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 }
