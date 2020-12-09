@@ -17,6 +17,7 @@ public class MoviesRestController {
     MovieRepository movieRepository;
     //view all moviies on the platform
 
+    //get movies list
     @GetMapping()
     public List<Movies> getMoviesList(){
         return (List<Movies>) movieRepository.findAll();
